@@ -16,11 +16,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.QuestionViewHolder> {
 
-    private Context mContext;
-    private ArrayList<Question> questionsList;
 
-    public QuestionsAdapter(Context context, ArrayList<Question> questionsList) {
-        this.mContext = context;
+    private ArrayList<Question> questionsList;
+    final private ListItemClickListener mOnClickListener;
+
+    public QuestionsAdapter(ArrayList<Question> questionsList, ListItemClickListener listener) {
+        mOnClickListener = listener;
         this.questionsList = questionsList;
     }
 
@@ -36,7 +37,9 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.Ques
     @Override
     public void onBindViewHolder(@NonNull QuestionViewHolder holder, int position) {
 
-        holder.title.setText(questionsList.get(position).getDifficulty());
+        holder.title.setText(questionsList.get(position).getQuestion());
+        holder.difficulty.setText(questionsList.get(position).getDifficulty());
+        holder.category.setText(questionsList.get(position).getCategory());
     }
 
     @Override
@@ -44,14 +47,30 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.Ques
         return questionsList.size();
     }
 
+    public interface ListItemClickListener {
+        void onListItemClick(int clickedItemIndex);
+    }
 
-    public class QuestionViewHolder extends RecyclerView.ViewHolder {
+
+    public class QuestionViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView title;
+        TextView difficulty;
+        TextView category;
 
         public QuestionViewHolder(@NonNull View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.tv_title);
+            difficulty = itemView.findViewById(R.id.tv_diff);
+            category = itemView.findViewById(R.id.tv_tag);
+
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            int clickedPosition = getAdapterPosition();
+            mOnClickListener.onListItemClick(clickedPosition);
         }
     }
 }
