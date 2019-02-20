@@ -1,22 +1,17 @@
 # Android_Utilities
 Codes for highly used Android Components
 
-## Material Design Components (MDC) - Project Shine
+## Material Design Components (MDC) - Project Shrine
 
-- You will fetch data from the Internet with the [MovieDB API](https://www.themoviedb.org/).
+- Implementing Codelab for MDC [Google Codelabs](https://codelabs.developers.google.com/?cat=Design).
 
-* Allow the user to tap on a movie poster and transition to a details screen with additional information such as:
-  original title
+* These are the codelabs that will guide you through building an app called Shrine, an e-commerce Android app that sells clothing and home goods. It will demonstrate how you can customize components to reflect any brand or style using MDC-Android.
 
-  - movie poster image thumbnail
-  - A plot synopsis (called overview in the api)
-  - user rating (called vote_average in the api)
-  - release date
+  - [MDC-101: Material Components (MDC) Basics](https://codelabs.developers.google.com/codelabs/mdc-101-java/index.html)
+  - [MDC-102: Material Design Structure and Layout.](https://codelabs.developers.google.com/codelabs/mdc-102-java/index.html)
+  - [MDC-103: Material Design Theming with Color, Shape, Elevation and Type](https://codelabs.developers.google.com/codelabs/mdc-103-java/index.html)
+  - [MDC-104 Android: Material Advanced Components (Java)](https://codelabs.developers.google.com/codelabs/mdc-104-java/index.html)
 
-* You’ll allow users to view and play trailers (either in the youtube app or a web browser).
-* You’ll allow users to read reviews of a selected movie.
-* You’ll also allow users to mark a movie as a favorite in the details view by tapping a button (star).
-* You'll make use of Android Architecture Components (Room, LiveData, ViewModel and Lifecycle) to create a robust an efficient application.
 
 ### Screenshots
 
