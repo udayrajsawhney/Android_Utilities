@@ -3,7 +3,7 @@ Codes for highly used Android Components
 
 ## Material Design Components (MDC) - Project Shrine
 
-- Implementing Codelab for MDC [Google Codelabs](https://codelabs.developers.google.com/?cat=Design).
+- Implementing for MDC [Google Codelabs](https://codelabs.developers.google.com/?cat=Design).
 
 * These are the codelabs that will guide you through building an app called Shrine, an e-commerce Android app that sells clothing and home goods. It will demonstrate how you can customize components to reflect any brand or style using MDC-Android.
 
