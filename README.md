@@ -20,4 +20,4 @@ Codes for highly used Android Components
 
 ### Screenshots
 
-<img src="https://github.com/udayrajsawhney/Udacity-Android-Nanodegree-Projects/blob/master/screenshots/1.png" width="180" height="370"/> <img src="https://github.com/udayrajsawhney/Udacity-Android-Nanodegree-Projects/blob/master/screenshots/2.png" width="180" height="370"/> <img src="https://github.com/udayrajsawhney/Udacity-Android-Nanodegree-Projects/blob/master/screenshots/3.png" width="180" height="370"/> <img src="https://github.com/udayrajsawhney/Udacity-Android-Nanodegree-Projects/blob/master/screenshots/4.png" width="180" height="370"/>
+<img src="https://github.com/udayrajsawhney/Android_Utilities/blob/master/screenshots/1.png" width="180" height="370"/> <img src="https://github.com/udayrajsawhney/Android_Utilities/blob/master/screenshots/2.png" width="180" height="370"/> <img src="https://github.com/udayrajsawhney/Android_Utilities/blob/master/screenshots/3.png" width="180" height="370"/> <img src="https://github.com/udayrajsawhney/Android_Utilities/blob/master/screenshots/4.png" width="180" height="370"/>
